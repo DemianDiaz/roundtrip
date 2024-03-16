@@ -1,0 +1,17 @@
+.navBar {
+    background-color: #ba6d29;
+    display: flex;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}

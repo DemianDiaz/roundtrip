@@ -1,0 +1,9 @@
+.greetingBox {
+    margin: 20%;
+}
+
+.saludo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #b31717;
+}
