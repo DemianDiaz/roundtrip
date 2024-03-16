@@ -3,7 +3,7 @@ import "./itemListContainer.css"
 const ItemListContainer = ( { greeting }) => {
 
   return (
-    <div>
+    <div className="greetingBox">
       <div className="saludo">{greeting}</div>
     </div>
   )
