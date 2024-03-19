@@ -1,13 +1,16 @@
 .cart {
-    width: 10%;
+    width: 15%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .burbuja {
     border-radius: 50%;
-    background-color: red;
-    margin: 20px;
-    padding-inline: 50px;
-    width: 5%;
+    background-color: white;
+    width: 1rem;
 }
 
 .cant {
