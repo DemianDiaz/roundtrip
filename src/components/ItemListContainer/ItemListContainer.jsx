@@ -1,12 +1,25 @@
-import "./itemListContainer.css"
+import getProducts from "../../data/getProducts";
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
 
-const ItemListContainer = ( { greeting } ) => {
+const ItemListContainer = () => {
 
-  return (
-    <div className="greetingBox">
-      <div className="saludo">{greeting}</div>
-    </div>
-  )
-}
+    const [products, setProducts] = useState ([])
+  
+    useEffect( ()=> {
+      getProducts
+        .then((res) => setProducts(res))
+        .catch((err) => console.log(err))
+        .finally(() => console.log("Promesa finalizada"));
+    }, []);
 
-export default ItemListContainer
+    
+    return (
+      <div>
+        <ItemList products={products}/>
+      </div>
+    );
+  };
+  
+  export default ItemListContainer
+  
